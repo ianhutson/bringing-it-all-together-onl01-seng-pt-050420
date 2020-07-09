@@ -67,7 +67,7 @@ attr_accessor :id, :name, :breed
     end.first
   end
   
-  def self.find_by_name(id)
+  def self.find_by_name(name)
     sql = <<-SQL
       SELECT *
       FROM dogs
