@@ -22,4 +22,9 @@ attr_accessor :id, :name, :breed
     sql = "DROP TABLE IF EXISTS dogs"
     DB[:conn].execute(sql) 
   end
+  
+  def self.create(name, breed)
+    student = Student.new(name, grade)
+    student.save
+  end
 end
