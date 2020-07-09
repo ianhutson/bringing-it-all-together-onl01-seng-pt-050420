@@ -24,7 +24,7 @@ attr_accessor :id, :name, :breed
   end
   
   def self.create(name, breed)
-    student = Student.new(name, grade)
-    student.save
+    dog = Dog.new(name, breed)
+    dog.save
   end
 end
