@@ -90,4 +90,8 @@ attr_accessor :id, :name, :breed
     end
     dog
   end
+  def update
+    sql = "UPDATE students SET name = ?, grade = ? WHERE id = ?"
+    DB[:conn].execute(sql, self.name, self.grade, self.id)
+  end
 end
